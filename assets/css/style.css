@@ -1,0 +1,360 @@
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	background: url('../images/natural_paper.png');
+	font-family: 'bebas_neueregular', sans-serif;
+	font-weight: normal;
+	color: #424242;
+}
+
+#wrapper {
+	margin:  2em auto;
+	position: relative;
+	background: url('../images/lightpaperfibers.png');
+	width: 890px;
+	border: 20px double #424242;
+	-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+border-radius: 10px;
+overflow: hidden;
+padding-bottom: 0px;
+}
+
+.title {
+	margin: 10px auto;
+	width: 95%;
+	border-top: 5px solid #424242;
+	border-bottom: 5px solid #424242;
+}
+
+h1 {
+	width: 95%;
+	text-align: center;
+	font-size: 5em;
+	font-weight: normal;
+	padding: 0;
+	margin: -6px auto -6px auto;
+}
+
+h1:before {
+	font-size: 0.6em;
+	content: '\2022';
+	position: absolute;
+	left: 0;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+h1:after {
+	font-size: 0.6em;
+	content: '\2022';
+	position: absolute;
+	right: 0;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.flexslider {
+	width: 95%;
+	margin: 0 auto;
+ margin-bottom: 40px;
+ border: 4px solid #424242;
+}
+
+.slides img {
+	max-width: 100%;
+}
+
+.text {
+	width: 95%;
+	margin: 0 auto 10px auto;
+	border-top: 5px solid #424242;
+	border-bottom: 5px solid #424242;
+}
+
+.text p:first-child {
+	font-size: 2.42em;
+	margin-bottom: 0;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-top: 0;
+}
+
+.text .ears {
+	margin-top: -20px;
+	margin-bottom: -16px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 6.7em;
+}
+
+.thanks .text {
+	overflow: hidden;
+}
+
+.thanks .text .back {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 3em;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+a {
+	color: #424242;
+}
+
+/* CONTACT */
+
+.contact {
+	width: 95%;
+	margin: 0px auto 10px auto;
+	border-top: 5px solid #424242;
+	border-bottom: 5px solid #424242;
+	overflow: hidden;
+	padding-top: 10px;
+}
+
+.contacttext {
+	width: 25%;
+}
+
+.contact p {
+	float: left;
+	width: 100%;
+	font-size: 1.3em;
+	margin-top: 0;
+	text-align: justify;
+}
+
+h2 {
+	font-weight: normal;
+	float: left;
+	width: 100%;
+	margin: -7px 0 0 0;
+	font-size: 3em;
+}
+
+form {
+	float: right;
+	width: 70%;
+	color: #424242;
+	margin-top: -50px;
+}
+
+#name, #email {
+	font-size: 1.5em;
+	width: 48%;
+	margin-bottom: 10px;
+	border: 4px solid #424242;
+	color: #424242;
+}
+
+#name {
+	float: left;
+}
+
+#email {
+	float: right;
+}
+
+textarea {
+	font-size: 1.5em;
+	width: 100%;
+	border: 4px solid #424242;
+	color: #424242;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+input[type="submit"] {
+	float: right;
+	background: #424242;
+	color: #ffffff;
+	border: 0;
+	font-size: 1.5em;
+	font-weight: normal;
+	padding: 10px;
+	margin: 10px 0 10px 0;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 979px) {
+	#wrapper {
+		width: 650px;
+	}
+
+	h1 {
+	font-size: 3.6em;
+	}
+
+	h1:before, h1:after {
+		margin-top: 15px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.text p:first-child {
+	font-size: 1.7em;
+	}
+
+.text .ears {
+	font-size: 4.75em;
+	margin-top: -14px;
+	margin-bottom: -10px;
+	}
+
+	h2 {
+	font-size: 2.5em;
+	}
+
+	form {
+		margin-top: -38px;
+	}
+
+	#name, #email {
+		box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#wrapper {
+		width: 500px;
+	}
+
+	h1 {
+	font-size: 2.85em;
+	}
+
+	h1:before, h1:after {
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.text p:first-child {
+	font-size: 1.3em;
+	margin-bottom: 5px;
+	}
+
+.text .ears {
+	font-size: 3.6em;
+	margin-bottom: -8px;
+	}
+
+	h2 {
+	font-size: 2em;
+	}
+
+	form {
+		margin-top: -33px;
+	}
+
+	#name, #email {
+		width: 100%;
+		float: none;
+		box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	}
+}
+
+@media screen and (max-width: 555px) {
+	#wrapper {
+		width: 300px;
+	}
+
+	h1 {
+	font-size: 1.7em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+
+	h1:before, h1:after {
+		margin-top: 5px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.text p:first-child {
+	font-size: 1.3em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-bottom: 10px;
+	line-height: 0.9em;
+	}
+
+	.text .ears {
+	font-size: 2em;
+	margin-bottom: -2px;
+	margin-top: -15px;
+	}
+
+	.contacttext {
+		width: 95%;
+		float: none;
+		margin: 0 auto;
+	}
+
+	h2 {
+	font-size: 2em;
+	text-align: center;
+	}
+
+	.contacttext p {
+		margin-bottom: 5px;
+	}
+
+	form {
+		margin: 0 auto;		
+		width: 95%;
+		float: none;
+		clear: both;
+	}
+
+	#name, #email {
+		width: 100%;
+		float: none;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	#wrapper {
+		width: 250px;
+	}
+
+	h1 {
+	font-size: 1.4em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+
+	.text p:first-child {
+	font-size: 1.2em;
+	}
+
+	.text .ears {
+	font-size: 1.6em;
+	margin-bottom: 0px;
+	margin-top: -10px;
+	}
+}
